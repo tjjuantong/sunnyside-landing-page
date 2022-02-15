@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&family=Poppins:wght@400;600;900&display=swap');
+
+:root {
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);    /* (graphic design text)*/
+    --dark-blue: hsl(198, 62%, 26%);                /* (photography text)*/
+    --dark-moderate-cyan: #8BD2C4;       /* (footer)*/
+
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-size: 18px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.fraunces {
+    font-family: 'Fraunces', serif;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: white;
+}
+
+h3 {
+    font-family: 'Fraunces', serif;
+}
+
+p {
+    font-size: var(--font-size);
+}
+
+.row{
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.bg-img {
+    background-image: url("images/desktop/image-header.jpg");
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* navbar */
+.navbar-brand {
+    font-weight: 600;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    color: black;
+}
+
+.navbar-text a {
+    color: black;
+    font-weight: 400;
+}
+
+/* buttons */
+.btn {
+    font-weight: 800;
+}
+
+.btn-default {
+    color: black;
+    font-family: 'Fraunces', serif;
+    background: white;
+    
+}
+
+.btn-default:hover {
+    font-family: 'Fraunces', serif;
+    text-decoration-style: solid;
+    background: rgba(255,255,255, 0.30);
+    color: white;
+}
+
+#lrn::before {
+    z-index: -1;
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 0.7rem solid hsl(51, 100%, 82%);
+    border-radius: 25px;
+    width: 8.3rem;
+    transform: translate(-8px, 13px);
+}
+
+#lrn2::before {
+    z-index: -1;
+    content: "";
+    display: block;
+    position: absolute;
+    border-bottom: 0.7rem solid hsl(0, 100%, 87%);
+    border-radius: 25px;
+    width: 8.3rem;
+    transform: translate(-8px, 13px);
+}
+
+#lrn:hover::before{
+    border-bottom: 0.7rem solid var(--yellow); 
+    transition: 0.4s;
+}
+
+#lrn2:hover::before{
+    border-bottom: 0.7rem solid var(--soft-red);;
+    transition: 0.4s;
+}
+
+.btn {
+    border-radius: 40px;
+}
+
+/* colors */
+.cherry {
+    color: var(--dark-desaturated-cyan);
+}
+
+.orange {
+    color: var(--dark-blue);
+}
+
+.gray {
+    color: var(--dark-grayish-blue);
+}
+
+/* testimonials */
+.testimonials {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-grayish-blue);
+}
+
+.testimonials-header {
+    font-weight: 900;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.testimonials-caption {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--grayish-blue);
+}
+
+/* footer */
+footer {
+    background-color: var(--dark-moderate-cyan);
+    color: var(--dark-desaturated-cyan);
+    font-family: 'Poppins', sans-serif;
+}
+
+footer h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.list-inline-item a.nav-link {
+    color: var(--dark-desaturated-cyan);
+    font-weight: 600;
+}
+
+.list-inline-item a.nav-link:hover {
+    color: white;
+}
+
+i.fa.fa-2x {
+    color: var(--dark-desaturated-cyan);
+}
+
+i.fa.fa-2x:hover {
+    color: white;
+    transition: 0.2s;
+}
+
+/* attribution */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+/* Reponsive design */
+@media (max-width: 770px) {  
+    p {font-size:1rem;} /*1rem = 16px*/
+
+    #Navbar.collapse.navbar-collapse {
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+        margin: 0 15px;
+        margin-top: 32px;
+        font-weight: 600;
+    }
+
+    #Navbar.collapse.navbar-collapse::after {
+        content: "";
+        position: absolute;
+        right: 15px;
+        top: 3.8rem;
+        border-top: .6rem solid transparent;
+        border-bottom: .6rem solid hsl(0, 0%, 100%);
+        border-left: .6rem solid transparent;
+        border-right: .6rem solid hsl(0, 0%, 100%);
+    }
+
+    .nav-link {
+        color: var(--very-dark-desaturated-blue);
+        padding: 20px 0px;
+    }
+
+    .navbar-text a {
+        color: black;
+        font-weight: 400;
+        margin: 10px;
+    }
+
+    .btn-default {
+        color: black;
+        font-family: 'Fraunces', serif;
+        background: var(--yellow);
+}
+
+@media (min-width: 1000px) {  
+    .testimonials {font-size:0.9rem;} /*1rem = 16px*/
+}}
