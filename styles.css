@@ -231,8 +231,10 @@ i.fa.fa-2x:hover {
         color: black;
         font-family: 'Fraunces', serif;
         background: var(--yellow);
+    }
 }
 
 @media (min-width: 1000px) {  
     .testimonials {font-size:0.9rem;} /*1rem = 16px*/
-}}
+    
+}
